@@ -1,0 +1,39 @@
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.wrap{
+    display: flex;
+}
+
+.header {
+    background-color: green;
+    height: 100px;
+}
+
+.nav{
+    background-color: orange;
+    height: 50px;
+}
+
+.side {
+    background-color: red;
+    width: 30%;
+    height: 575px;
+}
+.main {
+    background-color: yellow;
+    flex-grow: 1;
+}
+
+.foot{
+    background-color: skyblue;
+    height: 50px;
+}
+
