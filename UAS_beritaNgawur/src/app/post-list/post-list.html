@@ -1,0 +1,25 @@
+<h3 class="text-center">Data API https://jsonplaceholder.typicode.com/posts</h3>
+<div class="container">
+    <table class="table table-striped-columns">
+        <thead>
+            <tr>
+            <th scope="col">ID</th>
+            <th scope="col">User ID</th>
+            <th scope="col">Title</th>
+            <th scope="col">Body</th>
+            <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for(post of posts; track post.id){
+            <tr>
+            <th scope="row">{{ post.id }}</th>
+            <td>{{ post.userId }}</td>
+            <td>{{ post.title }}</td>
+            <td>{{ post.body }}</td>
+            <td><button type="button" class="btn btn-warning" [routerLink]="['/posts', post.id]">See More >></button></td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
